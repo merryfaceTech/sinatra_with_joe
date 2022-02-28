@@ -1,0 +1,41 @@
+<%
+  @image_url = "https://images.theconversation.com/files/337593/original/file-20200526-106811-ql6d51.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1356&h=668&fit=crop"
+%>
+
+<section>
+  <h1>Llamas everywhere!</h1>
+  <img src=<%= @image_url %> alt='Not an alpaca'></img>
+  <p>Hey Flo and Ted!</p>
+</section>
+
+<style>
+  section {
+    max-width: 90vw;
+    margin: auto;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  img {
+    height: 25rem;
+    object-fit: cover;
+  }
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+  h1 {
+        font-size: 2rem;
+  }
+}
+</style>

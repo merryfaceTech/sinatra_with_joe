@@ -11,11 +11,11 @@ class App < Sinatra::Base
   end
 
   get '/' do
-    'Hello world!'
+    '<h1>Hello world!</h1>'
   end
   
   get '/llama-page' do
-    'llamas everywhere!'
+    erb :llamas
   end
 
   run! if app_file == $0
